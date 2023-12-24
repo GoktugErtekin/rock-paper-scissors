@@ -1,14 +1,29 @@
+# Taş, Kağıt, Makas
+## Kurallar
+
+Eğer oyuncu kazanırsa, 1 puan kazanır. Bilgisayar kazanırsa, oyuncu 1 puan kaybeder.
+
+### Orijinal
+- Kağıt, Taşı Yener
+- Taş, Makası Yener
+- Makas, Kağıdı Yener
+
+### Bonus
+- Makas, Kağıdı Yener
+- Kağıt, Taşı Yener
+- Taş, Kertenkele'i Yener
+- Kertenkele, Spock'u Yener
+- Spock, Makası Yener
+- Makas, Kertenkele'i Yener
+- Kağıt, Spock'u Yener
+- Taş, Makası Yener
+- Kertenkele, Kağıdı Yener
+- Spock, Taşı Yener
+
+Rock, Paper, Scissors, Lizard, Spock nedir? Bilmiyorsanız, The Big Bang Theory dizisinin bu klibine göz atın.
+
+# ENGLİSH
 # Rock, Paper, Scissors
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
-
-- View the optimal layout for the game depending on their device's screen size
-- Play Rock, Paper, Scissors against the computer
-- **Bonus**: Maintain the state of the score after refreshing the browser
-- **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer
-
 ### Rules
 
 If the player wins, they gain 1 point. If the computer wins, the player loses one point.
