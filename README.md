@@ -20,7 +20,7 @@ Eğer oyuncu kazanırsa, 1 puan kazanır. Bilgisayar kazanırsa, oyuncu 1 puan k
 - Kertenkele, Kağıdı Yener
 - Spock, Taşı Yener
 
-Rock, Paper, Scissors, Lizard, Spock nedir? Bilmiyorsanız, The Big Bang Theory dizisinin bu klibine göz atın.
+Rock, Paper, Scissors, Lizard, Spock nedir? Bilmiyorsanız, [The Big Bang Theory dizisinin bu klibine göz atın](https://www.youtube.com/watch?v=iSHPVCBsnLw).
 
 # ENGLİSH
 # Rock, Paper, Scissors
