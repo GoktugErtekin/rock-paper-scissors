@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+/* - Mobile: 375px
+- Desktop: 1366px */
+
+:root {
+    --scissors: RGB(194, 18, 12) to RGB(186, 21, 19);
+    --paper: RGB(12, 142, 225) to RGB(11, 121, 191);
+    --rock: RGB(123, 12, 194) to RGB(118, 14, 169);
+    --lizard: RGB(30, 141, 194) to RGB(28, 126, 165);
+    --cyan: RGB(0, 153, 132) to RGB(0, 134, 115);
+    --dark-text: RGB(43, 46, 54);
+    --score-text: RGB(120, 189, 94);
+    --header-outline: RGB(65, 74, 87);
+}
+body {
+    height: 100vh;
+    background: rgb(8, 20, 49);
+    background: linear-gradient(rgb(8, 20, 49) to rgb(9, 15, 21));
+}
+.score-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inside-container {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    padding: 15px;
+    border: 3px solid var(--header-outline);
+    border-radius: 15px;
+    margin-top: 1.5rem;
+}
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    color: var(--dark-text);
+    width: 125px;
+    border-radius: 10px;
+}
+.score-number {
+    font-size: 3rem;
+    color: var(--dark-text);
+}
+
+
+
+
+
+.rules-button {
+    color: white;
+    background-color: transparent;
+    border: 3px solid var(--header-outline);
+    border-radius: 8px;
+    padding: 10px 35px;
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+    transition: .3s;
+}
+.rules-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
