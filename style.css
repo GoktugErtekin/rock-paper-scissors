@@ -9,19 +9,19 @@
 - Desktop: 1366px */
 
 :root {
-    --scissors: RGB(194, 18, 12) to RGB(186, 21, 19);
-    --paper: RGB(12, 142, 225) to RGB(11, 121, 191);
-    --rock: RGB(123, 12, 194) to RGB(118, 14, 169);
-    --lizard: RGB(30, 141, 194) to RGB(28, 126, 165);
-    --cyan: RGB(0, 153, 132) to RGB(0, 134, 115);
-    --dark-text: RGB(43, 46, 54);
-    --score-text: RGB(120, 189, 94);
-    --header-outline: RGB(65, 74, 87);
+    --scissors: rgb(194, 18, 12) to rgb(186, 21, 19);
+    --paper: rgb(12, 142, 225) to rgb(11, 121, 191);
+    --rock: rgb(123, 12, 194) to rgb(118, 14, 169);
+    --lizard: rgb(30, 141, 194) to rgb(28, 126, 165);
+    --cyan: rgb(0, 153, 132) to rgb(0, 134, 115);
+    --dark-text: rgb(43, 46, 54);
+    --score-text: rgb(120, 189, 94);
+    --header-outline: rgb(65, 74, 87);
 }
 body {
     height: 100vh;
     background: rgb(8, 20, 49);
-    background: linear-gradient(rgb(8, 20, 49) to rgb(9, 15, 21));
+    background: radial-gradient(circle,rgb(8, 20, 49) 0%, rgb(9, 15, 21) 100%);
 }
 .score-container {
     display: flex;
@@ -44,17 +44,65 @@ body {
     flex-direction: column;
     background-color: white;
     color: var(--dark-text);
-    width: 125px;
+    width: 150px;
     border-radius: 10px;
 }
 .score-number {
-    font-size: 3rem;
-    color: var(--dark-text);
+    font-size: 3.5rem;
+    color: var(--score-text);
 }
-
-
-
-
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-container {
+    background-image: url("./images/bg-pentagon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.scissors-container,
+.spock-container,
+.paper-container,
+.rock-container,
+.lizard-container {
+    aspect-ratio: 1/1;
+}
+.paper {
+    background-color: white;
+    padding: 30px;
+    border: 15px solid rgb(12, 142, 225);
+    border-radius: 50%;
+}
+.scissors {
+    background-color: white;
+    padding: 30px;
+    border: 15px solid rgb(12, 142, 225);
+    border-radius: 50%;
+}
+.rock {
+    background-color: white;
+    padding: 30px;
+    border: 15px solid rgb(12, 142, 225);
+    border-radius: 50%;
+}
+.spock {
+    background-color: white;
+    padding: 30px;
+    border: 15px solid rgb(12, 142, 225);
+    border-radius: 50%;
+    /* sorun var ortalı değil */
+}
+.lizard {
+    background-color: white;
+    padding: 30px;
+    border: 15px solid rgb(12, 142, 225);
+    border-radius: 50%;
+}
+/* burdan devam */
 
 .rules-button {
     color: white;
