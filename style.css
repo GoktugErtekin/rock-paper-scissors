@@ -6,14 +6,15 @@
 }
 
 /* - Mobile: 375px
-- Desktop: 1366px */
+- Desktop: 1366px 
+*/
 
 :root {
-    --scissors: rgb(194, 18, 12) to rgb(186, 21, 19);
-    --paper: rgb(12, 142, 225) to rgb(11, 121, 191);
-    --rock: rgb(123, 12, 194) to rgb(118, 14, 169);
-    --lizard: rgb(30, 141, 194) to rgb(28, 126, 165);
-    --cyan: rgb(0, 153, 132) to rgb(0, 134, 115);
+    --scissors: hsl(39, 89%, 49%);
+    --paper: hsl(230, 89%, 62%);
+    --rock: hsl(349, 71%, 52%);
+    --lizard: hsl(261, 73%, 60%);
+    --cyan: hsl(189, 59%, 53%);
     --dark-text: rgb(43, 46, 54);
     --score-text: rgb(120, 189, 94);
     --header-outline: rgb(65, 74, 87);
@@ -53,57 +54,66 @@ body {
 }
 .game-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-}
-.game-container {
+    justify-content: center;
     background-image: url("./images/bg-pentagon.svg");
     background-position: center;
     background-repeat: no-repeat;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
+    height: 75%;
+    background-size: 30rem;
+    row-gap: 65px;
 }
-.scissors-container,
-.spock-container,
-.paper-container,
-.rock-container,
-.lizard-container {
-    aspect-ratio: 1/1;
+.spock-and-paper,
+.lizard-and-rock {
+    display: flex;
+    column-gap: 130px;
+}
+.spock-and-paper {
+    column-gap: 300px;
+    position: relative;
+    top: -40px;
+}
+.paper,
+.scissors,
+.rock,
+.spock,
+.lizard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 27px;
+    border: 15px solid;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    transition: .3s;
+}
+.paper:hover,
+.scissors:hover,
+.rock:hover,
+.spock:hover,
+.lizard:hover {
+    cursor: pointer;
+    background-color: rgb(206, 206, 206);
+    border-style: dashed;
 }
 .paper {
-    background-color: white;
-    padding: 30px;
-    border: 15px solid rgb(12, 142, 225);
-    border-radius: 50%;
+    border-color: var(--paper);
 }
 .scissors {
-    background-color: white;
-    padding: 30px;
-    border: 15px solid rgb(12, 142, 225);
-    border-radius: 50%;
+    border-color: var(--scissors);
 }
 .rock {
-    background-color: white;
-    padding: 30px;
-    border: 15px solid rgb(12, 142, 225);
-    border-radius: 50%;
+    border-color: var(--rock);
 }
 .spock {
-    background-color: white;
-    padding: 30px;
-    border: 15px solid rgb(12, 142, 225);
-    border-radius: 50%;
-    /* sorun var ortalı değil */
+    border-color: var(--cyan);
 }
 .lizard {
-    background-color: white;
-    padding: 30px;
-    border: 15px solid rgb(12, 142, 225);
-    border-radius: 50%;
+    border-color: var(--lizard);
 }
-/* burdan devam */
-
 .rules-button {
     color: white;
     background-color: transparent;
