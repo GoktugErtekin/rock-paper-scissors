@@ -74,6 +74,13 @@ body {
     position: relative;
     top: -40px;
 }
+.paper-container,
+.scissors-container,
+.rock-container,
+.spock-container,
+.lizard-container {
+    border-radius: 50%;
+}
 .paper,
 .scissors,
 .rock,
